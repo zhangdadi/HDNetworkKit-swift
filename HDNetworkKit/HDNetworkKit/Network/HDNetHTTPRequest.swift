@@ -75,7 +75,7 @@ public class HDNetHTTPMutipartDataFormItem: NSObject {
 /**
 *  HTTP请求
 */
-class HDNetHTTPRequest: HDNetQueuedRequest, NSURLConnectionDataDelegate
+public class HDNetHTTPRequest: HDNetQueuedRequest, NSURLConnectionDataDelegate
 {
     //url
     var destURL: NSURL?
@@ -153,7 +153,7 @@ class HDNetHTTPRequest: HDNetQueuedRequest, NSURLConnectionDataDelegate
         _connection.start()
         _netActIndicator.showNetActivityIndicator = true
         
-        debugPrintln("HTTP - \(_request.URL.absoluteString)")
+        debugPrintln("HTTP - \(_request.URL?.absoluteString)")
         return true
     }
     
@@ -194,19 +194,19 @@ class HDNetHTTPRequest: HDNetQueuedRequest, NSURLConnectionDataDelegate
             //头结束
             header += "\r\n"
             // 加入头
-            formBody.appendData(header.dataUsingEncoding(NSUTF8StringEncoding))
+            formBody.appendData(header.dataUsingEncoding(NSUTF8StringEncoding)!)
             //加入数据
             if item.content != nil && item.content!.isKindOfClass(NSData) {
                 var data = item.content as NSData
                 formBody.appendData(data)
             } else if item.content != nil {
                 var text = item.content as NSString
-                formBody.appendData(text.dataUsingEncoding(NSUTF8StringEncoding))
+                formBody.appendData(text.dataUsingEncoding(NSUTF8StringEncoding)!)
             }
         }
         
         //加入结束符
-        formBody.appendData(endBoundaryData)
+        formBody.appendData(endBoundaryData!)
         
         //设置HTTPHeader中Content-Type的值
         var contentType = "multipart/form-data; boundary=\(MPBoundary)"
@@ -293,7 +293,7 @@ class HDNetHTTPRequest: HDNetQueuedRequest, NSURLConnectionDataDelegate
     
     final override func queuedStop()
     {
-        if _connection {
+        if (_connection != nil) {
             _connection?.cancel()
             _connection = nil
             var error = NSError(domain: NSPOSIXErrorDomain, code: Int(EINTR), userInfo: nil)

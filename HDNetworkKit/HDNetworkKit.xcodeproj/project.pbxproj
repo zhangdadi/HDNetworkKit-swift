@@ -7,44 +7,46 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		09346ACF19D8F9280080EC05 /* HDStackXML.swift in Resources */ = {isa = PBXBuildFile; fileRef = 09346AC419D8F9280080EC05 /* HDStackXML.swift */; };
-		09346AD019D8F9280080EC05 /* ZParserXML.swift in Resources */ = {isa = PBXBuildFile; fileRef = 09346AC519D8F9280080EC05 /* ZParserXML.swift */; };
-		09346AD119D8F9280080EC05 /* HDNetDataControl.swift in Resources */ = {isa = PBXBuildFile; fileRef = 09346AC719D8F9280080EC05 /* HDNetDataControl.swift */; };
-		09346AD219D8F9280080EC05 /* HDNetDataModel.swift in Resources */ = {isa = PBXBuildFile; fileRef = 09346AC819D8F9280080EC05 /* HDNetDataModel.swift */; };
-		09346AD319D8F9280080EC05 /* HDNetDataThread.swift in Resources */ = {isa = PBXBuildFile; fileRef = 09346AC919D8F9280080EC05 /* HDNetDataThread.swift */; };
-		09346AD419D8F9280080EC05 /* HDNetHTTPRequest.swift in Resources */ = {isa = PBXBuildFile; fileRef = 09346ACA19D8F9280080EC05 /* HDNetHTTPRequest.swift */; };
-		09346AD519D8F9280080EC05 /* HDNetRequest.swift in Resources */ = {isa = PBXBuildFile; fileRef = 09346ACB19D8F9280080EC05 /* HDNetRequest.swift */; };
-		09346AD619D8F9280080EC05 /* HDNetRequestQueue.swift in Resources */ = {isa = PBXBuildFile; fileRef = 09346ACC19D8F9280080EC05 /* HDNetRequestQueue.swift */; };
-		09346AD719D8F9280080EC05 /* HDNetActivityIndicator.swift in Resources */ = {isa = PBXBuildFile; fileRef = 09346ACE19D8F9280080EC05 /* HDNetActivityIndicator.swift */; };
-		0983664019D8F838003ABBB3 /* HDNetworkKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 0983663F19D8F838003ABBB3 /* HDNetworkKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		09F4E20E19D90AA600BC227E /* HDStackXML.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09346AC419D8F9280080EC05 /* HDStackXML.swift */; };
-		09F4E20F19D90AA600BC227E /* ZParserXML.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09346AC519D8F9280080EC05 /* ZParserXML.swift */; };
-		09F4E21019D90AA600BC227E /* HDNetRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09346ACB19D8F9280080EC05 /* HDNetRequest.swift */; };
-		09F4E21119D90AA600BC227E /* HDNetRequestQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09346ACC19D8F9280080EC05 /* HDNetRequestQueue.swift */; };
-		09F4E21219D90AA600BC227E /* HDNetHTTPRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09346ACA19D8F9280080EC05 /* HDNetHTTPRequest.swift */; };
-		09F4E21319D90AA600BC227E /* HDNetDataThread.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09346AC919D8F9280080EC05 /* HDNetDataThread.swift */; };
-		09F4E21419D90AA600BC227E /* HDNetDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09346AC819D8F9280080EC05 /* HDNetDataModel.swift */; };
-		09F4E21519D90AA600BC227E /* HDNetDataControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09346AC719D8F9280080EC05 /* HDNetDataControl.swift */; };
-		09F4E21619D90AA600BC227E /* HDNetActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09346ACE19D8F9280080EC05 /* HDNetActivityIndicator.swift */; };
+		09D81ACD19D9A7CB00DFAFF6 /* HDNetworkKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 09D81ACC19D9A7CB00DFAFF6 /* HDNetworkKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		09D81AD719D9A7CB00DFAFF6 /* HDNetworkKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D81AD619D9A7CB00DFAFF6 /* HDNetworkKitTests.swift */; };
+		09D81AED19D9A7FB00DFAFF6 /* HDStackXML.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D81AE219D9A7FB00DFAFF6 /* HDStackXML.swift */; };
+		09D81AEE19D9A7FB00DFAFF6 /* ZParserXML.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D81AE319D9A7FB00DFAFF6 /* ZParserXML.swift */; };
+		09D81AEF19D9A7FB00DFAFF6 /* HDNetDataControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D81AE519D9A7FB00DFAFF6 /* HDNetDataControl.swift */; };
+		09D81AF019D9A7FB00DFAFF6 /* HDNetDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D81AE619D9A7FB00DFAFF6 /* HDNetDataModel.swift */; };
+		09D81AF119D9A7FB00DFAFF6 /* HDNetDataThread.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D81AE719D9A7FB00DFAFF6 /* HDNetDataThread.swift */; };
+		09D81AF219D9A7FB00DFAFF6 /* HDNetHTTPRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D81AE819D9A7FB00DFAFF6 /* HDNetHTTPRequest.swift */; };
+		09D81AF319D9A7FB00DFAFF6 /* HDNetRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D81AE919D9A7FB00DFAFF6 /* HDNetRequest.swift */; };
+		09D81AF419D9A7FB00DFAFF6 /* HDNetRequestQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D81AEA19D9A7FB00DFAFF6 /* HDNetRequestQueue.swift */; };
+		09D81AF519D9A7FB00DFAFF6 /* HDNetActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D81AEC19D9A7FB00DFAFF6 /* HDNetActivityIndicator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		09346AC419D8F9280080EC05 /* HDStackXML.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = HDStackXML.swift; sourceTree = "<group>"; };
-		09346AC519D8F9280080EC05 /* ZParserXML.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ZParserXML.swift; sourceTree = "<group>"; };
-		09346AC719D8F9280080EC05 /* HDNetDataControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = HDNetDataControl.swift; sourceTree = "<group>"; };
-		09346AC819D8F9280080EC05 /* HDNetDataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = HDNetDataModel.swift; sourceTree = "<group>"; };
-		09346AC919D8F9280080EC05 /* HDNetDataThread.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = HDNetDataThread.swift; sourceTree = "<group>"; };
-		09346ACA19D8F9280080EC05 /* HDNetHTTPRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = HDNetHTTPRequest.swift; sourceTree = "<group>"; };
-		09346ACB19D8F9280080EC05 /* HDNetRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = HDNetRequest.swift; sourceTree = "<group>"; };
-		09346ACC19D8F9280080EC05 /* HDNetRequestQueue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = HDNetRequestQueue.swift; sourceTree = "<group>"; };
-		09346ACE19D8F9280080EC05 /* HDNetActivityIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = HDNetActivityIndicator.swift; sourceTree = "<group>"; };
-		0983663A19D8F838003ABBB3 /* HDNetworkKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HDNetworkKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		0983663E19D8F838003ABBB3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0983663F19D8F838003ABBB3 /* HDNetworkKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HDNetworkKit.h; sourceTree = "<group>"; };
+		09D81AC719D9A7CB00DFAFF6 /* HDNetworkKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HDNetworkKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		09D81ACB19D9A7CB00DFAFF6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		09D81ACC19D9A7CB00DFAFF6 /* HDNetworkKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HDNetworkKit.h; sourceTree = "<group>"; };
+		09D81AD219D9A7CB00DFAFF6 /* HDNetworkKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HDNetworkKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		09D81AD519D9A7CB00DFAFF6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		09D81AD619D9A7CB00DFAFF6 /* HDNetworkKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HDNetworkKitTests.swift; sourceTree = "<group>"; };
+		09D81AE219D9A7FB00DFAFF6 /* HDStackXML.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HDStackXML.swift; sourceTree = "<group>"; };
+		09D81AE319D9A7FB00DFAFF6 /* ZParserXML.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZParserXML.swift; sourceTree = "<group>"; };
+		09D81AE519D9A7FB00DFAFF6 /* HDNetDataControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HDNetDataControl.swift; sourceTree = "<group>"; };
+		09D81AE619D9A7FB00DFAFF6 /* HDNetDataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HDNetDataModel.swift; sourceTree = "<group>"; };
+		09D81AE719D9A7FB00DFAFF6 /* HDNetDataThread.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HDNetDataThread.swift; sourceTree = "<group>"; };
+		09D81AE819D9A7FB00DFAFF6 /* HDNetHTTPRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HDNetHTTPRequest.swift; sourceTree = "<group>"; };
+		09D81AE919D9A7FB00DFAFF6 /* HDNetRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HDNetRequest.swift; sourceTree = "<group>"; };
+		09D81AEA19D9A7FB00DFAFF6 /* HDNetRequestQueue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HDNetRequestQueue.swift; sourceTree = "<group>"; };
+		09D81AEC19D9A7FB00DFAFF6 /* HDNetActivityIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HDNetActivityIndicator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		0983663619D8F838003ABBB3 /* Frameworks */ = {
+		09D81AC319D9A7CB00DFAFF6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		09D81ACF19D9A7CB00DFAFF6 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -54,102 +56,121 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		09346AC219D8F9280080EC05 /* Lib */ = {
+		09D81ABD19D9A7CB00DFAFF6 = {
 			isa = PBXGroup;
 			children = (
-				09346AC319D8F9280080EC05 /* ParserXML */,
-			);
-			path = Lib;
-			sourceTree = "<group>";
-		};
-		09346AC319D8F9280080EC05 /* ParserXML */ = {
-			isa = PBXGroup;
-			children = (
-				09346AC419D8F9280080EC05 /* HDStackXML.swift */,
-				09346AC519D8F9280080EC05 /* ZParserXML.swift */,
-			);
-			path = ParserXML;
-			sourceTree = "<group>";
-		};
-		09346AC619D8F9280080EC05 /* Network */ = {
-			isa = PBXGroup;
-			children = (
-				09346ACB19D8F9280080EC05 /* HDNetRequest.swift */,
-				09346ACC19D8F9280080EC05 /* HDNetRequestQueue.swift */,
-				09346ACA19D8F9280080EC05 /* HDNetHTTPRequest.swift */,
-				09346AC919D8F9280080EC05 /* HDNetDataThread.swift */,
-				09346AC819D8F9280080EC05 /* HDNetDataModel.swift */,
-				09346AC719D8F9280080EC05 /* HDNetDataControl.swift */,
-			);
-			path = Network;
-			sourceTree = "<group>";
-		};
-		09346ACD19D8F9280080EC05 /* UI */ = {
-			isa = PBXGroup;
-			children = (
-				09346ACE19D8F9280080EC05 /* HDNetActivityIndicator.swift */,
-			);
-			path = UI;
-			sourceTree = "<group>";
-		};
-		0983663019D8F838003ABBB3 = {
-			isa = PBXGroup;
-			children = (
-				0983663C19D8F838003ABBB3 /* HDNetworkKit */,
-				0983663B19D8F838003ABBB3 /* Products */,
+				09D81AC919D9A7CB00DFAFF6 /* HDNetworkKit */,
+				09D81AD319D9A7CB00DFAFF6 /* HDNetworkKitTests */,
+				09D81AC819D9A7CB00DFAFF6 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		0983663B19D8F838003ABBB3 /* Products */ = {
+		09D81AC819D9A7CB00DFAFF6 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				0983663A19D8F838003ABBB3 /* HDNetworkKit.framework */,
+				09D81AC719D9A7CB00DFAFF6 /* HDNetworkKit.framework */,
+				09D81AD219D9A7CB00DFAFF6 /* HDNetworkKitTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		0983663C19D8F838003ABBB3 /* HDNetworkKit */ = {
+		09D81AC919D9A7CB00DFAFF6 /* HDNetworkKit */ = {
 			isa = PBXGroup;
 			children = (
-				0983663F19D8F838003ABBB3 /* HDNetworkKit.h */,
-				09346AC219D8F9280080EC05 /* Lib */,
-				09346AC619D8F9280080EC05 /* Network */,
-				09346ACD19D8F9280080EC05 /* UI */,
-				0983663D19D8F838003ABBB3 /* Supporting Files */,
+				09D81ACC19D9A7CB00DFAFF6 /* HDNetworkKit.h */,
+				09D81AE019D9A7FB00DFAFF6 /* Lib */,
+				09D81AE419D9A7FB00DFAFF6 /* Network */,
+				09D81AEB19D9A7FB00DFAFF6 /* UI */,
+				09D81ACA19D9A7CB00DFAFF6 /* Supporting Files */,
 			);
 			path = HDNetworkKit;
 			sourceTree = "<group>";
 		};
-		0983663D19D8F838003ABBB3 /* Supporting Files */ = {
+		09D81ACA19D9A7CB00DFAFF6 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				0983663E19D8F838003ABBB3 /* Info.plist */,
+				09D81ACB19D9A7CB00DFAFF6 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		09D81AD319D9A7CB00DFAFF6 /* HDNetworkKitTests */ = {
+			isa = PBXGroup;
+			children = (
+				09D81AD619D9A7CB00DFAFF6 /* HDNetworkKitTests.swift */,
+				09D81AD419D9A7CB00DFAFF6 /* Supporting Files */,
+			);
+			path = HDNetworkKitTests;
+			sourceTree = "<group>";
+		};
+		09D81AD419D9A7CB00DFAFF6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				09D81AD519D9A7CB00DFAFF6 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		09D81AE019D9A7FB00DFAFF6 /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+				09D81AE119D9A7FB00DFAFF6 /* ParserXML */,
+			);
+			path = Lib;
+			sourceTree = "<group>";
+		};
+		09D81AE119D9A7FB00DFAFF6 /* ParserXML */ = {
+			isa = PBXGroup;
+			children = (
+				09D81AE219D9A7FB00DFAFF6 /* HDStackXML.swift */,
+				09D81AE319D9A7FB00DFAFF6 /* ZParserXML.swift */,
+			);
+			path = ParserXML;
+			sourceTree = "<group>";
+		};
+		09D81AE419D9A7FB00DFAFF6 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				09D81AE519D9A7FB00DFAFF6 /* HDNetDataControl.swift */,
+				09D81AE619D9A7FB00DFAFF6 /* HDNetDataModel.swift */,
+				09D81AE719D9A7FB00DFAFF6 /* HDNetDataThread.swift */,
+				09D81AE819D9A7FB00DFAFF6 /* HDNetHTTPRequest.swift */,
+				09D81AE919D9A7FB00DFAFF6 /* HDNetRequest.swift */,
+				09D81AEA19D9A7FB00DFAFF6 /* HDNetRequestQueue.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		09D81AEB19D9A7FB00DFAFF6 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				09D81AEC19D9A7FB00DFAFF6 /* HDNetActivityIndicator.swift */,
+			);
+			path = UI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		0983663719D8F838003ABBB3 /* Headers */ = {
+		09D81AC419D9A7CB00DFAFF6 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0983664019D8F838003ABBB3 /* HDNetworkKit.h in Headers */,
+				09D81ACD19D9A7CB00DFAFF6 /* HDNetworkKit.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		0983663919D8F838003ABBB3 /* HDNetworkKit */ = {
+		09D81AC619D9A7CB00DFAFF6 /* HDNetworkKit */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0983664D19D8F838003ABBB3 /* Build configuration list for PBXNativeTarget "HDNetworkKit" */;
+			buildConfigurationList = 09D81ADA19D9A7CB00DFAFF6 /* Build configuration list for PBXNativeTarget "HDNetworkKit" */;
 			buildPhases = (
-				0983663519D8F838003ABBB3 /* Sources */,
-				0983663619D8F838003ABBB3 /* Frameworks */,
-				0983663719D8F838003ABBB3 /* Headers */,
-				0983663819D8F838003ABBB3 /* Resources */,
+				09D81AC219D9A7CB00DFAFF6 /* Sources */,
+				09D81AC319D9A7CB00DFAFF6 /* Frameworks */,
+				09D81AC419D9A7CB00DFAFF6 /* Headers */,
+				09D81AC519D9A7CB00DFAFF6 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -157,80 +178,107 @@
 			);
 			name = HDNetworkKit;
 			productName = HDNetworkKit;
-			productReference = 0983663A19D8F838003ABBB3 /* HDNetworkKit.framework */;
+			productReference = 09D81AC719D9A7CB00DFAFF6 /* HDNetworkKit.framework */;
 			productType = "com.apple.product-type.framework";
+		};
+		09D81AD119D9A7CB00DFAFF6 /* HDNetworkKitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 09D81ADD19D9A7CB00DFAFF6 /* Build configuration list for PBXNativeTarget "HDNetworkKitTests" */;
+			buildPhases = (
+				09D81ACE19D9A7CB00DFAFF6 /* Sources */,
+				09D81ACF19D9A7CB00DFAFF6 /* Frameworks */,
+				09D81AD019D9A7CB00DFAFF6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HDNetworkKitTests;
+			productName = HDNetworkKitTests;
+			productReference = 09D81AD219D9A7CB00DFAFF6 /* HDNetworkKitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		0983663119D8F838003ABBB3 /* Project object */ = {
+		09D81ABE19D9A7CB00DFAFF6 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0600;
-				ORGANIZATIONNAME = YH;
+				ORGANIZATIONNAME = "张达棣";
 				TargetAttributes = {
-					0983663919D8F838003ABBB3 = {
-						CreatedOnToolsVersion = 6.0;
+					09D81AC619D9A7CB00DFAFF6 = {
+						CreatedOnToolsVersion = 6.0.1;
+					};
+					09D81AD119D9A7CB00DFAFF6 = {
+						CreatedOnToolsVersion = 6.0.1;
 					};
 				};
 			};
-			buildConfigurationList = 0983663419D8F838003ABBB3 /* Build configuration list for PBXProject "HDNetworkKit" */;
+			buildConfigurationList = 09D81AC119D9A7CB00DFAFF6 /* Build configuration list for PBXProject "HDNetworkKit" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = 0983663019D8F838003ABBB3;
-			productRefGroup = 0983663B19D8F838003ABBB3 /* Products */;
+			mainGroup = 09D81ABD19D9A7CB00DFAFF6;
+			productRefGroup = 09D81AC819D9A7CB00DFAFF6 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				0983663919D8F838003ABBB3 /* HDNetworkKit */,
+				09D81AC619D9A7CB00DFAFF6 /* HDNetworkKit */,
+				09D81AD119D9A7CB00DFAFF6 /* HDNetworkKitTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		0983663819D8F838003ABBB3 /* Resources */ = {
+		09D81AC519D9A7CB00DFAFF6 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				09346ACF19D8F9280080EC05 /* HDStackXML.swift in Resources */,
-				09346AD419D8F9280080EC05 /* HDNetHTTPRequest.swift in Resources */,
-				09346AD219D8F9280080EC05 /* HDNetDataModel.swift in Resources */,
-				09346AD619D8F9280080EC05 /* HDNetRequestQueue.swift in Resources */,
-				09346AD519D8F9280080EC05 /* HDNetRequest.swift in Resources */,
-				09346AD119D8F9280080EC05 /* HDNetDataControl.swift in Resources */,
-				09346AD019D8F9280080EC05 /* ZParserXML.swift in Resources */,
-				09346AD319D8F9280080EC05 /* HDNetDataThread.swift in Resources */,
-				09346AD719D8F9280080EC05 /* HDNetActivityIndicator.swift in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		09D81AD019D9A7CB00DFAFF6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		0983663519D8F838003ABBB3 /* Sources */ = {
+		09D81AC219D9A7CB00DFAFF6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				09F4E20E19D90AA600BC227E /* HDStackXML.swift in Sources */,
-				09F4E20F19D90AA600BC227E /* ZParserXML.swift in Sources */,
-				09F4E21019D90AA600BC227E /* HDNetRequest.swift in Sources */,
-				09F4E21119D90AA600BC227E /* HDNetRequestQueue.swift in Sources */,
-				09F4E21219D90AA600BC227E /* HDNetHTTPRequest.swift in Sources */,
-				09F4E21319D90AA600BC227E /* HDNetDataThread.swift in Sources */,
-				09F4E21419D90AA600BC227E /* HDNetDataModel.swift in Sources */,
-				09F4E21519D90AA600BC227E /* HDNetDataControl.swift in Sources */,
-				09F4E21619D90AA600BC227E /* HDNetActivityIndicator.swift in Sources */,
+				09D81AED19D9A7FB00DFAFF6 /* HDStackXML.swift in Sources */,
+				09D81AF219D9A7FB00DFAFF6 /* HDNetHTTPRequest.swift in Sources */,
+				09D81AF019D9A7FB00DFAFF6 /* HDNetDataModel.swift in Sources */,
+				09D81AF419D9A7FB00DFAFF6 /* HDNetRequestQueue.swift in Sources */,
+				09D81AF319D9A7FB00DFAFF6 /* HDNetRequest.swift in Sources */,
+				09D81AEF19D9A7FB00DFAFF6 /* HDNetDataControl.swift in Sources */,
+				09D81AEE19D9A7FB00DFAFF6 /* ZParserXML.swift in Sources */,
+				09D81AF119D9A7FB00DFAFF6 /* HDNetDataThread.swift in Sources */,
+				09D81AF519D9A7FB00DFAFF6 /* HDNetActivityIndicator.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		09D81ACE19D9A7CB00DFAFF6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09D81AD719D9A7CB00DFAFF6 /* HDNetworkKitTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		0983664B19D8F838003ABBB3 /* Debug */ = {
+		09D81AD819D9A7CB00DFAFF6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -265,7 +313,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -276,7 +324,7 @@
 			};
 			name = Debug;
 		};
-		0983664C19D8F838003ABBB3 /* Release */ = {
+		09D81AD919D9A7CB00DFAFF6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -305,7 +353,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -315,7 +363,7 @@
 			};
 			name = Release;
 		};
-		0983664E19D8F838003ABBB3 /* Debug */ = {
+		09D81ADB19D9A7CB00DFAFF6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				DEFINES_MODULE = YES;
@@ -330,7 +378,7 @@
 			};
 			name = Debug;
 		};
-		0983664F19D8F838003ABBB3 /* Release */ = {
+		09D81ADC19D9A7CB00DFAFF6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				DEFINES_MODULE = YES;
@@ -345,28 +393,65 @@
 			};
 			name = Release;
 		};
+		09D81ADE19D9A7CB00DFAFF6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = HDNetworkKitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		09D81ADF19D9A7CB00DFAFF6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = HDNetworkKitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		0983663419D8F838003ABBB3 /* Build configuration list for PBXProject "HDNetworkKit" */ = {
+		09D81AC119D9A7CB00DFAFF6 /* Build configuration list for PBXProject "HDNetworkKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				0983664B19D8F838003ABBB3 /* Debug */,
-				0983664C19D8F838003ABBB3 /* Release */,
+				09D81AD819D9A7CB00DFAFF6 /* Debug */,
+				09D81AD919D9A7CB00DFAFF6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0983664D19D8F838003ABBB3 /* Build configuration list for PBXNativeTarget "HDNetworkKit" */ = {
+		09D81ADA19D9A7CB00DFAFF6 /* Build configuration list for PBXNativeTarget "HDNetworkKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				0983664E19D8F838003ABBB3 /* Debug */,
-				0983664F19D8F838003ABBB3 /* Release */,
+				09D81ADB19D9A7CB00DFAFF6 /* Debug */,
+				09D81ADC19D9A7CB00DFAFF6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+		};
+		09D81ADD19D9A7CB00DFAFF6 /* Build configuration list for PBXNativeTarget "HDNetworkKitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				09D81ADE19D9A7CB00DFAFF6 /* Debug */,
+				09D81ADF19D9A7CB00DFAFF6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 0983663119D8F838003ABBB3 /* Project object */;
+	rootObject = 09D81ABE19D9A7CB00DFAFF6 /* Project object */;
 }

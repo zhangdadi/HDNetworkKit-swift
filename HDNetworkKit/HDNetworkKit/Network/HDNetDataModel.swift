@@ -41,7 +41,7 @@ public class HDNetDataObject: NSObject {
 
 
 //__________________________________________________________________________
-class HDNetDataModel: NSObject, HDNetRequestDelegate {
+public class HDNetDataModel: NSObject, HDNetRequestDelegate {
 //    //参数
 //    var param:NSObject?
 //    //数据内容
@@ -85,7 +85,7 @@ class HDNetDataModel: NSObject, HDNetRequestDelegate {
     
     //+_________________________________________________
     // 输出数据 必须在数据线程中调用
-    func outputData(newData: HDNetDataObject?) {
+    public func outputData(newData: HDNetDataObject?) {
         assert(DataThreadInitSingleton.isDataThread(), "当前线程不是数据线程")
         _mainThreadAssigndata(newData)
     }
@@ -103,7 +103,7 @@ class HDNetDataModel: NSObject, HDNetRequestDelegate {
     }
     
     // 启动请求 必须在数据线程中调用
-    func startRequestFunc() {
+    public func startRequestFunc() {
         assert(DataThreadInitSingleton.isDataThread(), "当前线程不是数据线程")
         setupRequestFunc()
         if netRequest == nil {

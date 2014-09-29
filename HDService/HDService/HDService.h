@@ -3,11 +3,10 @@
 //  HDService
 //
 //  Created by 张达棣 on 14-9-29.
-//  Copyright (c) 2014年 YH. All rights reserved.
+//  Copyright (c) 2014年 张达棣. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
-
 
 //! Project version number for HDService.
 FOUNDATION_EXPORT double HDServiceVersionNumber;

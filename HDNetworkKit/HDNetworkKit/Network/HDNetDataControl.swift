@@ -32,26 +32,26 @@ public class HDNetDataControl: HDNetDataModel {
     
     //+________________________________________
     // 刷新：清空当前数据，并重新下载
-    func refresh() {
+    public func refresh() {
         weak var weakSelf = self
         DataThreadInitSingleton.shareInstance().onCall = weakSelf?._refreshFunc
     }
     
     // 更新：下载数据然后替换原内容
-    func update() {
+    public func update() {
         weak var weakSelf = self
         DataThreadInitSingleton.shareInstance().onCall = weakSelf?.startRequestFunc
         
     }
     
     // 加载：如果无数据则下载，否则不做操作
-    func load() {
+    public func load() {
         weak var weakSelf = self
         DataThreadInitSingleton.shareInstance().onCall = weakSelf?._loadFunc
     }
     
     // 加载缓存：只尝试加载缓存数据
-    func loadCache() {
+    public func loadCache() {
         weak var weakSelf = self
         DataThreadInitSingleton.shareInstance().onCall = weakSelf?._loadCacheFunc
 
@@ -119,41 +119,41 @@ public class HDNetDataPageControl: HDNetDataModel {
     var _requestintParam: NSObject?
     //+________________________________________
     // 刷新：清空当前数据，并重新下载
-    func refresh() {
+    public func refresh() {
         weak var weakSelf = self
         DataThreadInitSingleton.shareInstance().onCall = weakSelf?._refreshFunc
 
     }
     // 更新：下载数据然后替换原内容
-    func update() {
+    public func update() {
         weak var weakSelf = self
         DataThreadInitSingleton.shareInstance().onCall = weakSelf?._updateFunc
 
     }
     // 加载：如果无数据则下载，否则不做操作
-    func load() {
+    public func load() {
         weak var weakSelf = self
         DataThreadInitSingleton.shareInstance().onCall = weakSelf?._loadFunc
     }
     // 清空：清除所有数据
-    func clear() {
+    public func clear() {
         weak var weakSelf = self
         DataThreadInitSingleton.shareInstance().onCall = weakSelf?.clearRequest
     }
     
     // 重置下载标志：让loadPageAtItemIndex方法重新加载内容
-    func setNeedsUpdate() {
+    public func setNeedsUpdate() {
         weak var weakSelf = self
         DataThreadInitSingleton.shareInstance().onCall = weakSelf?._setNeedsUpdateFunc
     }
     // 重新加载特定项目所在页面的内容
-    func loadPageAtItemIndex(index: Int) {
+    public func loadPageAtItemIndex(index: Int) {
         weak var weakSelf = self
         DataThreadInitSingleton.shareInstance() .setOnCallParm(_loadPageAtItemIndexFunc, parm: index)
 
     }
     // 加载更多页面，如果hasMorePage为真
-    func loadMore() {
+    public func loadMore() {
         weak var weakSelf = self
         DataThreadInitSingleton.shareInstance().onCall = weakSelf?._loadMoreFunc
 

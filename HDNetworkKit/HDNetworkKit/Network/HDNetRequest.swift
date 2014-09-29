@@ -39,7 +39,7 @@ import UIKit
 
 //_______________________________________________________________________
 
-class HDNetRequest: NSObject
+public class HDNetRequest: NSObject
 {
     var isInProgress: Bool = false  //请求是否在进行中
     weak var delegate: HDNetRequestDelegate? //通知

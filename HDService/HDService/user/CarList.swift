@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import HDNetWorkKit
 
 class DCDataCarList: DCDataObject {
    
@@ -22,12 +23,14 @@ class DCDataCtrlCarList: DCDataControl {
     var param = DCDataCarListParam()
     
     override func dataRequest() {
-        autoRequest(urlSuffix: "http://www.baidu.com")
+//        autoRequest(urlSuffix: "http://www.baidu.com")
 //        var request = HDNetHTTPRequest()
 //        var url = NSURL(string: "http://www.baidu.com")
 //        request.destURL = url
 //        request.queue = QueueSingleton.shareInstance()
 //        self.netRequest = request
+//        var aa = HDNetDataObject()
+        
     }
     
     override func dataProcess(data: NSData?, updateDate: NSDate)  {

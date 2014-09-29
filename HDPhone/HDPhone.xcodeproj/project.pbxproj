@@ -7,83 +7,110 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0983661419D8F80B003ABBB3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0983661319D8F80B003ABBB3 /* AppDelegate.swift */; };
-		0983661619D8F80B003ABBB3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0983661519D8F80B003ABBB3 /* ViewController.swift */; };
-		0983661919D8F80B003ABBB3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0983661719D8F80B003ABBB3 /* Main.storyboard */; };
-		0983661B19D8F80B003ABBB3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0983661A19D8F80B003ABBB3 /* Images.xcassets */; };
-		09F4E20B19D90A8500BC227E /* HDNetworkKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09F4E20A19D90A8500BC227E /* HDNetworkKit.framework */; };
-		09F4E20C19D90A8500BC227E /* HDNetworkKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 09F4E20A19D90A8500BC227E /* HDNetworkKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		09D81B3319D9ACAE00DFAFF6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D81B3219D9ACAE00DFAFF6 /* AppDelegate.swift */; };
+		09D81B3619D9ACAE00DFAFF6 /* HDPhone.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 09D81B3419D9ACAE00DFAFF6 /* HDPhone.xcdatamodeld */; };
+		09D81B3819D9ACAE00DFAFF6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D81B3719D9ACAE00DFAFF6 /* ViewController.swift */; };
+		09D81B3B19D9ACAE00DFAFF6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09D81B3919D9ACAE00DFAFF6 /* Main.storyboard */; };
+		09D81B3D19D9ACAE00DFAFF6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 09D81B3C19D9ACAE00DFAFF6 /* Images.xcassets */; };
+		09D81B4019D9ACAE00DFAFF6 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09D81B3E19D9ACAE00DFAFF6 /* LaunchScreen.xib */; };
+		09D81B4C19D9ACAE00DFAFF6 /* HDPhoneTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D81B4B19D9ACAE00DFAFF6 /* HDPhoneTests.swift */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXCopyFilesBuildPhase section */
-		09F4E20D19D90A8500BC227E /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				09F4E20C19D90A8500BC227E /* HDNetworkKit.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
+/* Begin PBXContainerItemProxy section */
+		09D81B4619D9ACAE00DFAFF6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 09D81B2519D9ACAE00DFAFF6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 09D81B2C19D9ACAE00DFAFF6;
+			remoteInfo = HDPhone;
 		};
-/* End PBXCopyFilesBuildPhase section */
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0983660E19D8F80B003ABBB3 /* HDPhone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HDPhone.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		0983661219D8F80B003ABBB3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0983661319D8F80B003ABBB3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		0983661519D8F80B003ABBB3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		0983661819D8F80B003ABBB3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		0983661A19D8F80B003ABBB3 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		09F4E20A19D90A8500BC227E /* HDNetworkKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; name = HDNetworkKit.framework; path = "/Users/zhangdadi/Library/Developer/Xcode/DerivedData/Demo-dmzzklpmpgsgcphimiuwnhhskcbp/Build/Products/Debug-iphoneos/HDNetworkKit.framework"; sourceTree = "<absolute>"; };
+		09D81B2D19D9ACAE00DFAFF6 /* HDPhone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HDPhone.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		09D81B3119D9ACAE00DFAFF6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		09D81B3219D9ACAE00DFAFF6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		09D81B3519D9ACAE00DFAFF6 /* HDPhone.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = HDPhone.xcdatamodel; sourceTree = "<group>"; };
+		09D81B3719D9ACAE00DFAFF6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		09D81B3A19D9ACAE00DFAFF6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		09D81B3C19D9ACAE00DFAFF6 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		09D81B3F19D9ACAE00DFAFF6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		09D81B4519D9ACAE00DFAFF6 /* HDPhoneTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HDPhoneTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		09D81B4A19D9ACAE00DFAFF6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		09D81B4B19D9ACAE00DFAFF6 /* HDPhoneTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HDPhoneTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		0983660B19D8F80B003ABBB3 /* Frameworks */ = {
+		09D81B2A19D9ACAE00DFAFF6 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				09F4E20B19D90A8500BC227E /* HDNetworkKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		09D81B4219D9ACAE00DFAFF6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0983660519D8F80B003ABBB3 = {
+		09D81B2419D9ACAE00DFAFF6 = {
 			isa = PBXGroup;
 			children = (
-				09F4E20A19D90A8500BC227E /* HDNetworkKit.framework */,
-				0983661019D8F80B003ABBB3 /* HDPhone */,
-				0983660F19D8F80B003ABBB3 /* Products */,
+				09D81B2F19D9ACAE00DFAFF6 /* HDPhone */,
+				09D81B4819D9ACAE00DFAFF6 /* HDPhoneTests */,
+				09D81B2E19D9ACAE00DFAFF6 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		0983660F19D8F80B003ABBB3 /* Products */ = {
+		09D81B2E19D9ACAE00DFAFF6 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				0983660E19D8F80B003ABBB3 /* HDPhone.app */,
+				09D81B2D19D9ACAE00DFAFF6 /* HDPhone.app */,
+				09D81B4519D9ACAE00DFAFF6 /* HDPhoneTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		0983661019D8F80B003ABBB3 /* HDPhone */ = {
+		09D81B2F19D9ACAE00DFAFF6 /* HDPhone */ = {
 			isa = PBXGroup;
 			children = (
-				0983661319D8F80B003ABBB3 /* AppDelegate.swift */,
-				0983661519D8F80B003ABBB3 /* ViewController.swift */,
-				0983661719D8F80B003ABBB3 /* Main.storyboard */,
-				0983661A19D8F80B003ABBB3 /* Images.xcassets */,
-				0983661119D8F80B003ABBB3 /* Supporting Files */,
+				09D81B3219D9ACAE00DFAFF6 /* AppDelegate.swift */,
+				09D81B3719D9ACAE00DFAFF6 /* ViewController.swift */,
+				09D81B3919D9ACAE00DFAFF6 /* Main.storyboard */,
+				09D81B3C19D9ACAE00DFAFF6 /* Images.xcassets */,
+				09D81B3E19D9ACAE00DFAFF6 /* LaunchScreen.xib */,
+				09D81B3419D9ACAE00DFAFF6 /* HDPhone.xcdatamodeld */,
+				09D81B3019D9ACAE00DFAFF6 /* Supporting Files */,
 			);
 			path = HDPhone;
 			sourceTree = "<group>";
 		};
-		0983661119D8F80B003ABBB3 /* Supporting Files */ = {
+		09D81B3019D9ACAE00DFAFF6 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				0983661219D8F80B003ABBB3 /* Info.plist */,
+				09D81B3119D9ACAE00DFAFF6 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		09D81B4819D9ACAE00DFAFF6 /* HDPhoneTests */ = {
+			isa = PBXGroup;
+			children = (
+				09D81B4B19D9ACAE00DFAFF6 /* HDPhoneTests.swift */,
+				09D81B4919D9ACAE00DFAFF6 /* Supporting Files */,
+			);
+			path = HDPhoneTests;
+			sourceTree = "<group>";
+		};
+		09D81B4919D9ACAE00DFAFF6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				09D81B4A19D9ACAE00DFAFF6 /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -91,14 +118,13 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		0983660D19D8F80B003ABBB3 /* HDPhone */ = {
+		09D81B2C19D9ACAE00DFAFF6 /* HDPhone */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0983662A19D8F80C003ABBB3 /* Build configuration list for PBXNativeTarget "HDPhone" */;
+			buildConfigurationList = 09D81B4F19D9ACAE00DFAFF6 /* Build configuration list for PBXNativeTarget "HDPhone" */;
 			buildPhases = (
-				0983660A19D8F80B003ABBB3 /* Sources */,
-				0983660B19D8F80B003ABBB3 /* Frameworks */,
-				0983660C19D8F80B003ABBB3 /* Resources */,
-				09F4E20D19D90A8500BC227E /* Embed Frameworks */,
+				09D81B2919D9ACAE00DFAFF6 /* Sources */,
+				09D81B2A19D9ACAE00DFAFF6 /* Frameworks */,
+				09D81B2B19D9ACAE00DFAFF6 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -106,24 +132,46 @@
 			);
 			name = HDPhone;
 			productName = HDPhone;
-			productReference = 0983660E19D8F80B003ABBB3 /* HDPhone.app */;
+			productReference = 09D81B2D19D9ACAE00DFAFF6 /* HDPhone.app */;
 			productType = "com.apple.product-type.application";
+		};
+		09D81B4419D9ACAE00DFAFF6 /* HDPhoneTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 09D81B5219D9ACAE00DFAFF6 /* Build configuration list for PBXNativeTarget "HDPhoneTests" */;
+			buildPhases = (
+				09D81B4119D9ACAE00DFAFF6 /* Sources */,
+				09D81B4219D9ACAE00DFAFF6 /* Frameworks */,
+				09D81B4319D9ACAE00DFAFF6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				09D81B4719D9ACAE00DFAFF6 /* PBXTargetDependency */,
+			);
+			name = HDPhoneTests;
+			productName = HDPhoneTests;
+			productReference = 09D81B4519D9ACAE00DFAFF6 /* HDPhoneTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		0983660619D8F80B003ABBB3 /* Project object */ = {
+		09D81B2519D9ACAE00DFAFF6 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0600;
-				ORGANIZATIONNAME = YH;
+				ORGANIZATIONNAME = "张达棣";
 				TargetAttributes = {
-					0983660D19D8F80B003ABBB3 = {
-						CreatedOnToolsVersion = 6.0;
+					09D81B2C19D9ACAE00DFAFF6 = {
+						CreatedOnToolsVersion = 6.0.1;
+					};
+					09D81B4419D9ACAE00DFAFF6 = {
+						CreatedOnToolsVersion = 6.0.1;
+						TestTargetID = 09D81B2C19D9ACAE00DFAFF6;
 					};
 				};
 			};
-			buildConfigurationList = 0983660919D8F80B003ABBB3 /* Build configuration list for PBXProject "HDPhone" */;
+			buildConfigurationList = 09D81B2819D9ACAE00DFAFF6 /* Build configuration list for PBXProject "HDPhone" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -131,53 +179,87 @@
 				en,
 				Base,
 			);
-			mainGroup = 0983660519D8F80B003ABBB3;
-			productRefGroup = 0983660F19D8F80B003ABBB3 /* Products */;
+			mainGroup = 09D81B2419D9ACAE00DFAFF6;
+			productRefGroup = 09D81B2E19D9ACAE00DFAFF6 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				0983660D19D8F80B003ABBB3 /* HDPhone */,
+				09D81B2C19D9ACAE00DFAFF6 /* HDPhone */,
+				09D81B4419D9ACAE00DFAFF6 /* HDPhoneTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		0983660C19D8F80B003ABBB3 /* Resources */ = {
+		09D81B2B19D9ACAE00DFAFF6 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0983661919D8F80B003ABBB3 /* Main.storyboard in Resources */,
-				0983661B19D8F80B003ABBB3 /* Images.xcassets in Resources */,
+				09D81B3B19D9ACAE00DFAFF6 /* Main.storyboard in Resources */,
+				09D81B4019D9ACAE00DFAFF6 /* LaunchScreen.xib in Resources */,
+				09D81B3D19D9ACAE00DFAFF6 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		09D81B4319D9ACAE00DFAFF6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		0983660A19D8F80B003ABBB3 /* Sources */ = {
+		09D81B2919D9ACAE00DFAFF6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0983661619D8F80B003ABBB3 /* ViewController.swift in Sources */,
-				0983661419D8F80B003ABBB3 /* AppDelegate.swift in Sources */,
+				09D81B3819D9ACAE00DFAFF6 /* ViewController.swift in Sources */,
+				09D81B3619D9ACAE00DFAFF6 /* HDPhone.xcdatamodeld in Sources */,
+				09D81B3319D9ACAE00DFAFF6 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		09D81B4119D9ACAE00DFAFF6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09D81B4C19D9ACAE00DFAFF6 /* HDPhoneTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		09D81B4719D9ACAE00DFAFF6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 09D81B2C19D9ACAE00DFAFF6 /* HDPhone */;
+			targetProxy = 09D81B4619D9ACAE00DFAFF6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
-		0983661719D8F80B003ABBB3 /* Main.storyboard */ = {
+		09D81B3919D9ACAE00DFAFF6 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				0983661819D8F80B003ABBB3 /* Base */,
+				09D81B3A19D9ACAE00DFAFF6 /* Base */,
 			);
 			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		09D81B3E19D9ACAE00DFAFF6 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				09D81B3F19D9ACAE00DFAFF6 /* Base */,
+			);
+			name = LaunchScreen.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		0983662819D8F80C003ABBB3 /* Debug */ = {
+		09D81B4D19D9ACAE00DFAFF6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -211,7 +293,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -219,7 +301,7 @@
 			};
 			name = Debug;
 		};
-		0983662919D8F80C003ABBB3 /* Release */ = {
+		09D81B4E19D9ACAE00DFAFF6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -247,65 +329,109 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
-		0983662B19D8F80C003ABBB3 /* Debug */ = {
+		09D81B5019D9ACAE00DFAFF6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/Demo-dmzzklpmpgsgcphimiuwnhhskcbp/Build/Products/Debug-iphoneos",
-				);
 				INFOPLIST_FILE = HDPhone/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
 		};
-		0983662C19D8F80C003ABBB3 /* Release */ = {
+		09D81B5119D9ACAE00DFAFF6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/Demo-dmzzklpmpgsgcphimiuwnhhskcbp/Build/Products/Debug-iphoneos",
-				);
 				INFOPLIST_FILE = HDPhone/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
 		};
+		09D81B5319D9ACAE00DFAFF6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = HDPhoneTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HDPhone.app/HDPhone";
+			};
+			name = Debug;
+		};
+		09D81B5419D9ACAE00DFAFF6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = HDPhoneTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HDPhone.app/HDPhone";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		0983660919D8F80B003ABBB3 /* Build configuration list for PBXProject "HDPhone" */ = {
+		09D81B2819D9ACAE00DFAFF6 /* Build configuration list for PBXProject "HDPhone" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				0983662819D8F80C003ABBB3 /* Debug */,
-				0983662919D8F80C003ABBB3 /* Release */,
+				09D81B4D19D9ACAE00DFAFF6 /* Debug */,
+				09D81B4E19D9ACAE00DFAFF6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0983662A19D8F80C003ABBB3 /* Build configuration list for PBXNativeTarget "HDPhone" */ = {
+		09D81B4F19D9ACAE00DFAFF6 /* Build configuration list for PBXNativeTarget "HDPhone" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				0983662B19D8F80C003ABBB3 /* Debug */,
-				0983662C19D8F80C003ABBB3 /* Release */,
+				09D81B5019D9ACAE00DFAFF6 /* Debug */,
+				09D81B5119D9ACAE00DFAFF6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+		};
+		09D81B5219D9ACAE00DFAFF6 /* Build configuration list for PBXNativeTarget "HDPhoneTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				09D81B5319D9ACAE00DFAFF6 /* Debug */,
+				09D81B5419D9ACAE00DFAFF6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		09D81B3419D9ACAE00DFAFF6 /* HDPhone.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				09D81B3519D9ACAE00DFAFF6 /* HDPhone.xcdatamodel */,
+			);
+			currentVersion = 09D81B3519D9ACAE00DFAFF6 /* HDPhone.xcdatamodel */;
+			path = HDPhone.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
-	rootObject = 0983660619D8F80B003ABBB3 /* Project object */;
+	rootObject = 09D81B2519D9ACAE00DFAFF6 /* Project object */;
 }

@@ -31,7 +31,7 @@ import UIKit
 /**
 *  带队列的网络请求
 */
-class HDNetQueuedRequest: HDNetRequest
+public class HDNetQueuedRequest: HDNetRequest
 {
     var queue: HDNetRequestQueue? //队列
     var _fProcessingQueue: HDNetRequestQueue? // 正在排队中的队列

@@ -70,7 +70,7 @@ struct DataThreadInitSingleton{
 /**
 *  全局队列
 */
-struct QueueSingleton {
+public struct QueueSingleton {
     static func shareInstance() -> HDNetRequestQueue {
         struct Singleton{
             static var predicate: dispatch_once_t = 0
