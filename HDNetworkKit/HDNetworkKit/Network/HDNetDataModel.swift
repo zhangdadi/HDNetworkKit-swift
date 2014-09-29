@@ -47,7 +47,7 @@ public class HDNetDataModel: NSObject, HDNetRequestDelegate {
 //    //数据内容
 //    var data:HDNetDataObject?
     // 网络错误
-    var netError:NSError?
+    public var netError:NSError?
     // 是否正在下载中(包含正在下载中和正在队列中的请求)
     var isInProgress: Bool {
         get {
@@ -60,7 +60,7 @@ public class HDNetDataModel: NSObject, HDNetRequestDelegate {
         }
     }
     // 进度值，从0到1
-    var progressValue: Float {
+    public var progressValue: Float {
     if netRequest?.isInProgress ?? false {
         return netRequest?.progressPercent ?? 0
         }
@@ -80,7 +80,7 @@ public class HDNetDataModel: NSObject, HDNetRequestDelegate {
     // 请求状态，用于多段请求.在此标识不为0时，持续进行请求
     var requestState = 0
     // 网络请求对象
-    var netRequest:HDNetRequest?
+    public var netRequest:HDNetRequest?
     var _callList = HDNetCallNode()
     
     //+_________________________________________________
@@ -121,11 +121,11 @@ public class HDNetDataModel: NSObject, HDNetRequestDelegate {
     
     //需要子类重写的内容,不需要调用super
     //子类创建网络请求并赋值给netRequest属性。在数据线程中执行
-    func createRequest() {
+    public func createRequest() {
         assert(false, "子类没有实现")
     }
     // 网络请求处理完毕，通知子类处理网络返回的数据。在数据线程中执行
-    func processResponse() {
+    public func processResponse() {
         assert(false, "子类没有实现")
         requestState = 0
     }

@@ -29,7 +29,6 @@ class DCDataCtrlCarList: DCDataControl {
 //        request.destURL = url
 //        request.queue = QueueSingleton.shareInstance()
 //        self.netRequest = request
-//        var aa = HDNetDataObject()
         
     }
     

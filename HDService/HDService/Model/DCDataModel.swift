@@ -35,14 +35,13 @@ class DCDataControl: HDNetDataControl {
     }
     
     func autoRequest(#urlPrefix: String, urlSuffix: String) {
-//        var request = HDNetHTTPRequest()
-//        var url = NSURL(string: urlPrefix + urlSuffix)
-//        request.destURL = url
-//        request.queue = QueueSingleton.shareInstance()
-////        request.multipartDict
-//        
-//        
-//        self.netRequest = request
+        var request = HDNetHTTPRequest()
+        var url = NSURL(string: urlPrefix + urlSuffix)
+        request.destURL = url
+        request.queue = QueueSingleton.shareInstance()
+        
+        
+        self.netRequest = request
     }
     func autoRequest(#urlSuffix: String) {
         autoRequest(urlPrefix: "", urlSuffix: urlSuffix)
@@ -54,42 +53,42 @@ class DCDataControl: HDNetDataControl {
     }
     
 //-____________________________________________________________________
-//    final override func createRequest() {
-//        dataRequest()
-//    }
-//    
-//    final override func processResponse() {
-//        if netError != nil {
-//            //error
-//            
-//        } else {
-//            dataProcess(netRequest?.responseData, updateDate: NSDate())
-//        }
-//    }
+    final override func createRequest() {
+        dataRequest()
+    }
+    
+    final override func processResponse() {
+        if netError != nil {
+            //error
+            
+        } else {
+            dataProcess(netRequest?.responseData, updateDate: NSDate())
+        }
+    }
 }
 
 
 class DCDataPageControl: HDNetDataPageControl {
     //子类重写的方法
-//    func dataRequest() {
-//        assert(false, "子类没有重写dataRequest")
-//    }
-//    
-//    //子类重写的方法
-//    func dataProcess(data: NSData?, updateDate: NSDate) {
-//        assert(false, "子类没有重写dataProcess")
-//    }
-//    
-//    final override func createRequest() {
-//        dataRequest()
-//    }
-//    
-//    final override func processResponse() {
-//        if netError != nil {
-//            //error
-//            
-//        } else {
-//            dataProcess(netRequest?.responseData, updateDate: NSDate())
-//        }
-//    }
+    func dataRequest() {
+        assert(false, "子类没有重写dataRequest")
+    }
+
+    //子类重写的方法
+    func dataProcess(data: NSData?, updateDate: NSDate) {
+        assert(false, "子类没有重写dataProcess")
+    }
+    
+    final override func createRequest() {
+        dataRequest()
+    }
+    
+    final override func processResponse() {
+        if netError != nil {
+            //error
+            
+        } else {
+            dataProcess(netRequest?.responseData, updateDate: NSDate())
+        }
+    }
 }

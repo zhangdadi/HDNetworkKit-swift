@@ -43,7 +43,7 @@ public class HDNetRequest: NSObject
 {
     var isInProgress: Bool = false  //请求是否在进行中
     weak var delegate: HDNetRequestDelegate? //通知
-    var responseData: NSData? // 网络返回数据
+    public var responseData: NSData? // 网络返回数据
     // 进度值，从0到1
     var progressPercent: Float {
         return 0

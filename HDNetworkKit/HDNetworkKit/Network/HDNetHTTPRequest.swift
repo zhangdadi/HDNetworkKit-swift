@@ -78,11 +78,11 @@ public class HDNetHTTPMutipartDataFormItem: NSObject {
 public class HDNetHTTPRequest: HDNetQueuedRequest, NSURLConnectionDataDelegate
 {
     //url
-    var destURL: NSURL?
+    public var destURL: NSURL?
     // POST multiple part 数据
-    var multipartDict: Dictionary<String, HDNetHTTPMutipartDataFormItem>?
+    public var multipartDict: Dictionary<String, HDNetHTTPMutipartDataFormItem>?
     //是否有缓存
-    var cached: Bool = false
+    public var cached: Bool = false
     
     final override var expectedSize: Int {
     var len = 0
@@ -117,7 +117,7 @@ public class HDNetHTTPRequest: HDNetQueuedRequest, NSURLConnectionDataDelegate
     
     //+___________________________________________________
     
-    override init()
+    override public init()
     {
         _request.timeoutInterval = 25 //超时时间
         _request.cachePolicy = NSURLRequestCachePolicy.ReloadIgnoringLocalCacheData
