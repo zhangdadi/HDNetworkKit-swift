@@ -9,15 +9,25 @@
 import UIKit
 import HDNetworkKit
 
+struct ServerURLs {
+    static let _service_Public = "http://www.v2ex.com/api/"
+    static let _service_Test = ""
+    
+    static func getUrlPrefix() -> NSString {
+        
+        return _service_Public
+    }
+}
+
 public class DCDataObject: HDNetDataObject {
-    var code: Int = 0
-    var errorMessage: String?
+    public var code: Int = 0
+    public var errorMessage: String?
 }
 
 public class DCDataControl: HDNetDataControl {
     
     func setupCacheByTag() {
-        
+
     }
     
     func setupCacheByTime() {
@@ -42,8 +52,11 @@ public class DCDataControl: HDNetDataControl {
         request.queue = QueueSingleton.shareInstance()
         self.netRequest = request
     }
-    func autoRequest(#urlSuffix: String, mutiPart: Dictionary<String, HDNetHTTPMutipartDataFormItem>?) {
-        autoRequest(urlPrefix: "", urlSuffix: urlSuffix, mutiPart: mutiPart)
+    func autoRequest(#urlSuffix: String, mutiPart: Dictionary<String, HDNetHTTPMutipartDataFormItem>) {
+        autoRequest(urlPrefix: ServerURLs.getUrlPrefix(), urlSuffix: urlSuffix, mutiPart: mutiPart)
+    }
+    func autoRequest(#urlSuffix: String) {
+        autoRequest(urlPrefix: ServerURLs.getUrlPrefix(), urlSuffix: urlSuffix, mutiPart: nil)
     }
     
     func _autoInitParam() {

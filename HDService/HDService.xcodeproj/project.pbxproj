@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		099EEC3519DEB69900E30209 /* Nodes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 099EEC3419DEB69900E30209 /* Nodes.swift */; };
 		09D81B0819D9A9FD00DFAFF6 /* HDService.h in Headers */ = {isa = PBXBuildFile; fileRef = 09D81B0719D9A9FD00DFAFF6 /* HDService.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		09D81B1219D9A9FD00DFAFF6 /* HDServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D81B1119D9A9FD00DFAFF6 /* HDServiceTests.swift */; };
 		09D81B2119D9AA3400DFAFF6 /* HDCService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D81B1C19D9AA3400DFAFF6 /* HDCService.swift */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		099EEC3419DEB69900E30209 /* Nodes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Nodes.swift; sourceTree = "<group>"; };
 		09D81B0219D9A9FD00DFAFF6 /* HDService.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HDService.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		09D81B0619D9A9FD00DFAFF6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		09D81B0719D9A9FD00DFAFF6 /* HDService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HDService.h; sourceTree = "<group>"; };
@@ -119,6 +121,7 @@
 			isa = PBXGroup;
 			children = (
 				09D81B2019D9AA3400DFAFF6 /* CarList.swift */,
+				099EEC3419DEB69900E30209 /* Nodes.swift */,
 			);
 			path = user;
 			sourceTree = "<group>";
@@ -232,6 +235,7 @@
 				09D81B2319D9AA3400DFAFF6 /* CarList.swift in Sources */,
 				09D81B2219D9AA3400DFAFF6 /* DCDataModel.swift in Sources */,
 				09D81B2119D9AA3400DFAFF6 /* HDCService.swift in Sources */,
+				099EEC3519DEB69900E30209 /* Nodes.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -410,6 +414,7 @@
 				09D81B1719D9A9FD00DFAFF6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		09D81B1819D9A9FD00DFAFF6 /* Build configuration list for PBXNativeTarget "HDServiceTests" */ = {
 			isa = XCConfigurationList;
@@ -418,6 +423,7 @@
 				09D81B1A19D9A9FD00DFAFF6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

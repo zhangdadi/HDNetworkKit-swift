@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		099EEC3319DEAE9300E30209 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 099EEC3219DEAE9300E30209 /* SwiftyJSON.swift */; };
 		09D81ACD19D9A7CB00DFAFF6 /* HDNetworkKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 09D81ACC19D9A7CB00DFAFF6 /* HDNetworkKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		09D81AD719D9A7CB00DFAFF6 /* HDNetworkKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D81AD619D9A7CB00DFAFF6 /* HDNetworkKitTests.swift */; };
 		09D81AED19D9A7FB00DFAFF6 /* HDStackXML.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D81AE219D9A7FB00DFAFF6 /* HDStackXML.swift */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		099EEC3219DEAE9300E30209 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
 		09D81AC719D9A7CB00DFAFF6 /* HDNetworkKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HDNetworkKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		09D81ACB19D9A7CB00DFAFF6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		09D81ACC19D9A7CB00DFAFF6 /* HDNetworkKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HDNetworkKit.h; sourceTree = "<group>"; };
@@ -114,6 +116,7 @@
 		09D81AE019D9A7FB00DFAFF6 /* Lib */ = {
 			isa = PBXGroup;
 			children = (
+				099EEC3219DEAE9300E30209 /* SwiftyJSON.swift */,
 				09D81AE119D9A7FB00DFAFF6 /* ParserXML */,
 			);
 			path = Lib;
@@ -258,6 +261,7 @@
 				09D81AED19D9A7FB00DFAFF6 /* HDStackXML.swift in Sources */,
 				09D81AF219D9A7FB00DFAFF6 /* HDNetHTTPRequest.swift in Sources */,
 				09D81AF019D9A7FB00DFAFF6 /* HDNetDataModel.swift in Sources */,
+				099EEC3319DEAE9300E30209 /* SwiftyJSON.swift in Sources */,
 				09D81AF419D9A7FB00DFAFF6 /* HDNetRequestQueue.swift in Sources */,
 				09D81AF319D9A7FB00DFAFF6 /* HDNetRequest.swift in Sources */,
 				09D81AEF19D9A7FB00DFAFF6 /* HDNetDataControl.swift in Sources */,
@@ -442,6 +446,7 @@
 				09D81ADC19D9A7CB00DFAFF6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		09D81ADD19D9A7CB00DFAFF6 /* Build configuration list for PBXNativeTarget "HDNetworkKitTests" */ = {
 			isa = XCConfigurationList;
@@ -450,6 +455,7 @@
 				09D81ADF19D9A7CB00DFAFF6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

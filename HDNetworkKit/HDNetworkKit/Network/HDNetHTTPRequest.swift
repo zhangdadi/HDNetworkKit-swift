@@ -37,7 +37,7 @@ public class HDNetHTTPMutipartDataFormItem: NSObject {
     var contentType: String? //数据类型
     
     //+___________________________________________________
-    public class func item(#int: Int64!) -> HDNetHTTPMutipartDataFormItem! {
+    public class func item(#int: Int!) -> HDNetHTTPMutipartDataFormItem! {
         var str: String = int.description;
         return HDNetHTTPMutipartDataFormItem.item(str: str)
     }
@@ -80,7 +80,7 @@ public class HDNetHTTPRequest: HDNetQueuedRequest, NSURLConnectionDataDelegate
     //url
     public var destURL: NSURL?
     // POST multiple part 数据
-    public var multipartDict: Dictionary<String, HDNetHTTPMutipartDataFormItem>?
+    public var multipartDict: [String: HDNetHTTPMutipartDataFormItem]?
     //是否有缓存
     public var cached: Bool = false
     

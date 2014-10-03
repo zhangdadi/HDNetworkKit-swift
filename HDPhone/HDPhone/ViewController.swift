@@ -12,16 +12,24 @@ import HDNetworkKit
 
 class ViewController: UIViewController, HDNetCtrlDelegate {
     let car = DCDataCtrl_carList()
+    let infoCtrl = DCDataCtrl_nodes()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        car.delegate = self;
+        car.delegate = self //多点回调委托，可以指向多点对象
+        infoCtrl.delegate = self
     }
 
     @IBAction func buttonClick(sender: AnyObject) {
         car.refresh()
     }
+    
+    @IBAction func infoButtonClick(sender: AnyObject) {
+        infoCtrl.param.mID = car.data?.listArray?[0].mID
+        infoCtrl.refresh()
+    }
+    
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -29,12 +37,26 @@ class ViewController: UIViewController, HDNetCtrlDelegate {
     }
     
     func netCtrlProgress(ctrl: HDNetDataModel) {
-        println("netCtrlProgress")
+        println("下载进度=\(ctrl.progressValue)")
+        
     }
     
     func netCtrlUpdate(ctrl: HDNetDataModel) {
-        println("netCtrlUpdate")
+        if ctrl === car {
+            if car.data?.errorMessage != nil {
+                println("请求错误=\(car.data?.errorMessage)")
+            } else {
+                println("获取的节点数＝\(car.data?.listArray?.count)")
+            }
+        }
+        
+        if ctrl === infoCtrl {
+            if infoCtrl.data?.errorMessage != nil {
+                println("请求错误=\(infoCtrl.data?.errorMessage)")
+            } else {
+                println("id = \(infoCtrl.data?.mID), name = \(infoCtrl.data?.name), title = \(infoCtrl.data?.title), url = \(infoCtrl.data?.url)")
+            }
+        }
     }
-
 }
 
