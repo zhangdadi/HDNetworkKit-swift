@@ -9,12 +9,12 @@
 import UIKit
 import HDNetworkKit
 
-class DCDataObject: HDNetDataObject {
+public class DCDataObject: HDNetDataObject {
     var code: Int = 0
     var errorMessage: String?
 }
 
-class DCDataControl: HDNetDataControl {
+public class DCDataControl: HDNetDataControl {
     
     func setupCacheByTag() {
         
@@ -34,17 +34,16 @@ class DCDataControl: HDNetDataControl {
         assert(false, "子类没有重写dataProcess")
     }
     
-    func autoRequest(#urlPrefix: String, urlSuffix: String) {
+    func autoRequest(#urlPrefix: String, urlSuffix: String, mutiPart: Dictionary<String, HDNetHTTPMutipartDataFormItem>?) {
         var request = HDNetHTTPRequest()
         var url = NSURL(string: urlPrefix + urlSuffix)
         request.destURL = url
+        request.multipartDict = mutiPart
         request.queue = QueueSingleton.shareInstance()
-        
-        
         self.netRequest = request
     }
-    func autoRequest(#urlSuffix: String) {
-        autoRequest(urlPrefix: "", urlSuffix: urlSuffix)
+    func autoRequest(#urlSuffix: String, mutiPart: Dictionary<String, HDNetHTTPMutipartDataFormItem>?) {
+        autoRequest(urlPrefix: "", urlSuffix: urlSuffix, mutiPart: mutiPart)
     }
     
     func _autoInitParam() {
@@ -53,11 +52,11 @@ class DCDataControl: HDNetDataControl {
     }
     
 //-____________________________________________________________________
-    final override func createRequest() {
+    final override public func _createRequest() {
         dataRequest()
     }
     
-    final override func processResponse() {
+    final override public func _processResponse() {
         if netError != nil {
             //error
             
@@ -68,7 +67,7 @@ class DCDataControl: HDNetDataControl {
 }
 
 
-class DCDataPageControl: HDNetDataPageControl {
+public class DCDataPageControl: HDNetDataPageControl {
     //子类重写的方法
     func dataRequest() {
         assert(false, "子类没有重写dataRequest")
@@ -79,11 +78,11 @@ class DCDataPageControl: HDNetDataPageControl {
         assert(false, "子类没有重写dataProcess")
     }
     
-    final override func createRequest() {
+    final override public func _createRequest() {
         dataRequest()
     }
     
-    final override func processResponse() {
+    final override public func _processResponse() {
         if netError != nil {
             //error
             

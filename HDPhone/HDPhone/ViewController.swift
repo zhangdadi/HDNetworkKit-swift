@@ -7,19 +7,34 @@
 //
 
 import UIKit
+import HDService
+import HDNetworkKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, HDNetCtrlDelegate {
+    let car = DCDataCtrl_carList()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        car.delegate = self;
     }
 
+    @IBAction func buttonClick(sender: AnyObject) {
+        car.refresh()
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
+    
+    func netCtrlProgress(ctrl: HDNetDataModel) {
+        println("netCtrlProgress")
+    }
+    
+    func netCtrlUpdate(ctrl: HDNetDataModel) {
+        println("netCtrlUpdate")
+    }
 
 }
 

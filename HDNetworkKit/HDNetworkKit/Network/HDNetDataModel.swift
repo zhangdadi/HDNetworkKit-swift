@@ -34,7 +34,7 @@ public class HDNetDataObject: NSObject {
 }
 
 //___________________________________________________________________________
-@objc protocol HDNetCtrlDelegate: NSObjectProtocol {
+@objc public protocol HDNetCtrlDelegate: NSObjectProtocol {
     optional func netCtrlUpdate(ctrl:HDNetDataModel)
     optional func netCtrlProgress(ctrl:HDNetDataModel)
 }
@@ -68,7 +68,7 @@ public class HDNetDataModel: NSObject, HDNetRequestDelegate {
     }
     
     //多点回调通知
-    weak var delegate:HDNetCtrlDelegate? {
+    weak public var delegate:HDNetCtrlDelegate? {
         get {
             return nil
         }
@@ -121,11 +121,11 @@ public class HDNetDataModel: NSObject, HDNetRequestDelegate {
     
     //需要子类重写的内容,不需要调用super
     //子类创建网络请求并赋值给netRequest属性。在数据线程中执行
-    public func createRequest() {
+    public func _createRequest() {
         assert(false, "子类没有实现")
     }
     // 网络请求处理完毕，通知子类处理网络返回的数据。在数据线程中执行
-    public func processResponse() {
+    public func _processResponse() {
         assert(false, "子类没有实现")
         requestState = 0
     }
@@ -155,7 +155,7 @@ public class HDNetDataModel: NSObject, HDNetRequestDelegate {
         netError = error
         netRequest!.delegate = nil
         
-        processResponse()
+        _processResponse()
         callUpdate()
         netRequest = nil
         if requestState != 0 { //判断是否持续进行请求
@@ -177,7 +177,7 @@ public class HDNetDataModel: NSObject, HDNetRequestDelegate {
     }
     
     func _setupRequest() {
-        createRequest()
+        _createRequest()
         if netRequest != nil {
             netRequest!.delegate = self;
             netRequest?.start()

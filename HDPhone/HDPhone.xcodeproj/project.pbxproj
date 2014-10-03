@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		09A77CB519DE52B80022F997 /* HDService.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09A77CB419DE52B80022F997 /* HDService.framework */; };
+		09A77CB719DE52C30022F997 /* HDNetworkKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09A77CB619DE52C30022F997 /* HDNetworkKit.framework */; };
 		09D81B3319D9ACAE00DFAFF6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D81B3219D9ACAE00DFAFF6 /* AppDelegate.swift */; };
 		09D81B3619D9ACAE00DFAFF6 /* HDPhone.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 09D81B3419D9ACAE00DFAFF6 /* HDPhone.xcdatamodeld */; };
 		09D81B3819D9ACAE00DFAFF6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D81B3719D9ACAE00DFAFF6 /* ViewController.swift */; };
@@ -27,6 +29,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		09A77CB419DE52B80022F997 /* HDService.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = HDService.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		09A77CB619DE52C30022F997 /* HDNetworkKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = HDNetworkKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		09D81B2D19D9ACAE00DFAFF6 /* HDPhone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HDPhone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		09D81B3119D9ACAE00DFAFF6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		09D81B3219D9ACAE00DFAFF6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -45,6 +49,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				09A77CB719DE52C30022F997 /* HDNetworkKit.framework in Frameworks */,
+				09A77CB519DE52B80022F997 /* HDService.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +67,8 @@
 		09D81B2419D9ACAE00DFAFF6 = {
 			isa = PBXGroup;
 			children = (
+				09A77CB619DE52C30022F997 /* HDNetworkKit.framework */,
+				09A77CB419DE52B80022F997 /* HDService.framework */,
 				09D81B2F19D9ACAE00DFAFF6 /* HDPhone */,
 				09D81B4819D9ACAE00DFAFF6 /* HDPhoneTests */,
 				09D81B2E19D9ACAE00DFAFF6 /* Products */,
@@ -340,6 +348,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/Demo-hklxuuefjjxxyseznfgwkkipwvlo/Build/Products/Debug-iphoneos",
+				);
 				INFOPLIST_FILE = HDPhone/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -350,6 +362,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/Demo-hklxuuefjjxxyseznfgwkkipwvlo/Build/Products/Debug-iphoneos",
+				);
 				INFOPLIST_FILE = HDPhone/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -409,6 +425,7 @@
 				09D81B5119D9ACAE00DFAFF6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		09D81B5219D9ACAE00DFAFF6 /* Build configuration list for PBXNativeTarget "HDPhoneTests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +434,7 @@
 				09D81B5419D9ACAE00DFAFF6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
