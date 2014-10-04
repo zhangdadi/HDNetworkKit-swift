@@ -17,7 +17,7 @@ class ViewController: UIViewController, HDNetCtrlDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        car.delegate = self //多点回调委托，可以指向多点对象
+        car.delegate = self //多点回调委托，可以同时指向多点对象并回调多个对象
         infoCtrl.delegate = self
     }
 
