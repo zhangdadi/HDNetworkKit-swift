@@ -1,5 +1,8 @@
 #HDNetworkKit-swift
 
+## 请注意 项目地址已转移到：[https://github.com/zhangdadi/SwiftHttp](https://github.com/zhangdadi/SwiftHttp)
+
+
 使用方法
 
 界面层：
